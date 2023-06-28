@@ -3,7 +3,7 @@ resource "aws_instance" "a_machine" {
     instance_type = "t2.micro"
     key_name = "test100"
 
-    tags {
+    tags = {
         Name = "You cannot change me!"
     }
   
