@@ -4,6 +4,10 @@ resource "aws_instance" "a_machine" {
     key_name = "test100"
 
     tags = {
-        Name = "You cannot change me!"
+        Name = var.machine_name
     }
+}
+
+variable machine_name {
+    default = "Name me please"
 }
